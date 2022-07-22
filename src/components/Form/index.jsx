@@ -3,10 +3,14 @@ import { useState } from "react";
 import "./style.css";
 
 function Form({ listTransactions, setListTransactions }) {
-  const handleEvent = (event) => event.preventDefault();
   const [newDescription, setNewDescription] = useState("");
-  const [newValue, setNewValue] = useState(0);
-  const [newType, setType] = useState("entrada");
+  const [newValue, setNewValue] = useState("");
+  const [newType, setNewType] = useState("entrada");
+  const handleEvent = (event) => {
+    event.preventDefault();
+    setNewDescription("");
+    setNewValue("");
+  };
   const addTransaction = (newDescription, newValue, newType) => {
     if (newDescription && newValue) {
       newValue =
@@ -33,6 +37,7 @@ function Form({ listTransactions, setListTransactions }) {
           type="text"
           placeholder="Digite aqui sua descrição"
           onChange={(event) => setNewDescription(event.target.value)}
+          value={newDescription}
         />
         <span className="form__description-example">Ex: Compra de roupas</span>
       </div>
@@ -45,6 +50,7 @@ function Form({ listTransactions, setListTransactions }) {
             className="form__value-input"
             type="number"
             onChange={(event) => setNewValue(event.target.value)}
+            value={newValue}
           />
         </div>
         <div className="form__value">
@@ -55,7 +61,8 @@ function Form({ listTransactions, setListTransactions }) {
             className="form__value-select"
             name="value-type"
             id="value-type"
-            onChange={(event) => setType(event.target.value)}
+            onChange={(event) => setNewType(event.target.value)}
+            value={newType}
           >
             <option className="form__option-in" value="entrada">
               Entrada
@@ -67,6 +74,7 @@ function Form({ listTransactions, setListTransactions }) {
         </div>
       </div>
       <button
+        type="submit"
         className="button button--insert-value"
         onClick={() => addTransaction(newDescription, newValue, newType)}
       >

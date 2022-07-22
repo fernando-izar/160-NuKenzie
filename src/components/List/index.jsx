@@ -55,13 +55,15 @@ function List({ listTransactions, setListTransactions }) {
                   <h3 className="card__description">{element.description}</h3>
                   <p className="card__type">{element.type}</p>
                 </div>
-                <p className="card__value">{element.value}</p>
-                <button
-                  className="button-trash"
-                  onClick={() => removeItem(index)}
-                >
-                  Del
-                </button>
+                <div className="card__div-value">
+                  <p className="card__value">
+                    R$ {Math.abs(element.value).toLocaleString("pt-br")}
+                  </p>
+                  <button
+                    className="button-trash"
+                    onClick={() => removeItem(index)}
+                  ></button>
+                </div>
               </li>
             ))}
           </ul>
@@ -71,16 +73,112 @@ function List({ listTransactions, setListTransactions }) {
               Você ainda não possui nenhum lançamento
             </h2>
             <div className="container-start-list__no-content">
-              <div className="container-start-list__big-rectangle"></div>
-              <div className="container-start-list__small-rectangle"></div>
+              <div className="container-start-list__big-rectangle">
+                <svg
+                  width="331"
+                  height="14"
+                  viewBox="0 0 331 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.0534668"
+                    y="0.722168"
+                    width="330.175"
+                    height="13.1852"
+                    fill="#E9ECEF"
+                  />
+                </svg>
+              </div>
+              <div className="container-start-list__small-rectangle">
+                <svg
+                  width="77"
+                  height="14"
+                  viewBox="0 0 77 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.0534668"
+                    y="0.0925293"
+                    width="76.2714"
+                    height="13.1852"
+                    fill="#E9ECEF"
+                  />
+                </svg>
+              </div>
             </div>
             <div className="container-start-list__no-content">
-              <div className="container-start-list__big-rectangle"></div>
-              <div className="container-start-list__small-rectangle"></div>
+              <div className="container-start-list__big-rectangle">
+                <svg
+                  width="331"
+                  height="14"
+                  viewBox="0 0 331 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.0534668"
+                    y="0.722168"
+                    width="330.175"
+                    height="13.1852"
+                    fill="#E9ECEF"
+                  />
+                </svg>
+              </div>
+              <div className="container-start-list__small-rectangle">
+                <svg
+                  width="77"
+                  height="14"
+                  viewBox="0 0 77 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.0534668"
+                    y="0.0925293"
+                    width="76.2714"
+                    height="13.1852"
+                    fill="#E9ECEF"
+                  />
+                </svg>
+              </div>
             </div>
             <div className="container-start-list__no-content">
-              <div className="container-start-list__big-rectangle"></div>
-              <div className="container-start-list__small-rectangle"></div>
+              <div className="container-start-list__big-rectangle">
+                <svg
+                  width="331"
+                  height="14"
+                  viewBox="0 0 331 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.0534668"
+                    y="0.722168"
+                    width="330.175"
+                    height="13.1852"
+                    fill="#E9ECEF"
+                  />
+                </svg>
+              </div>
+              <div className="container-start-list__small-rectangle">
+                <svg
+                  width="77"
+                  height="14"
+                  viewBox="0 0 77 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.0534668"
+                    y="0.0925293"
+                    width="76.2714"
+                    height="13.1852"
+                    fill="#E9ECEF"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         )}

@@ -1,0 +1,51 @@
+@import "../../assets/base.css";
+
+.total-money {
+  padding: 20px 20px 20px 24.5px;
+  display: flex;
+  flex-direction: column;
+  width: 363px;
+  height: 96px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  margin-top: 16px;
+  gap: 6px;
+}
+
+.total-money__totals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-money__text {
+  width: 84px;
+  height: 30px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--grey-4);
+}
+
+.total-money__value {
+  height: 30px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-primary);
+}
+
+.total-money__explanation {
+  display: flex;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #343a40;
+}

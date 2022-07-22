@@ -1,0 +1,113 @@
+@import "../../assets/base.css";
+
+.land {
+  width: 100%;
+  height: 100vh;
+  background: var(--grey-4);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.welcome {
+}
+
+.welcome__fig {
+}
+
+.welcome__img {
+}
+
+.land__title {
+}
+
+.land__paragraph {
+}
+
+.art {
+}
+
+.circle-external {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  width: 593px;
+  height: 593px;
+  left: 651px;
+  top: 94px;
+  background: url("../../assets/img/ellipseExternal.png");
+  z-index: 1;
+}
+
+.circle-median {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 516.95px;
+  height: 516.95px;
+  background: url("../../assets/img/ellipseMedian.png");
+}
+
+.circle-internal {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 424.61px;
+  height: 424.61px;
+  background: url("../../assets/img/ellipseInternal.png");
+}
+
+.big-rectangle {
+  width: 256.21px;
+  height: 354.89px;
+  left: 92px;
+  top: 20px;
+  background: #ffffff;
+  border-radius: 3.62137px;
+  position: absolute;
+}
+
+.big-rectangle__svgs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.big-rectangle__header {
+  height: 38.89px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 12px;
+  gap: 9px;
+}
+
+.big-rectangle__img-dot {
+  width: 6px;
+  height: 6px;
+}
+
+.green-rectangle {
+  width: 291.79px;
+  height: 69px;
+  left: 45.27px;
+  top: 202.89px;
+  background: #ffffff;
+  box-shadow: 0px 2.67961px 26.7961px rgba(0, 0, 0, 0.25);
+  border-radius: 2.67961px;
+  position: absolute;
+}
+
+.pink-rectangle {
+  position: absolute;
+  width: 313.25px;
+  height: 93.25px;
+  right: 36.21px;
+  top: 133.99px;
+  background: #ffffff;
+  box-shadow: 0px 3.62137px 36.2137px rgba(0, 0, 0, 0.25);
+  border-radius: 3.62137px;
+}

@@ -8,7 +8,6 @@
 }
 
 .list-header__title {
-  width: 137px;
   height: 30px;
   font-family: "Nunito";
   font-style: normal;
@@ -52,27 +51,83 @@
 }
 
 .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .card {
+  display: flex;
+  justify-content: space-between;
+  background: #f8f9fa;
+  border-radius: 4px;
 }
 
 .card__div-texts {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
 }
 
 .card__description {
+  height: 39px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+  text-align: start;
+  padding: 14px;
+  justify-content: flex-start;
+  display: inline-flex;
+  align-items: center;
 }
 
 .card__type {
+  text-align: start;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--grey-3);
+  padding: 14px;
+}
+
+.card__div-value {
+  display: flex;
+  gap: 27px;
+  align-items: center;
+  margin-top: 35px;
+  align-items: flex-start;
 }
 
 .card__value {
+  width: 102px;
+  height: 22px;
+  text-align: start;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #212529;
 }
 
 .button-trash {
+  background: url("../../assets/img/trash.png") no-repeat scroll 6px 6px
+    var(--grey-2);
+  border-radius: 2.46154px;
+  width: 22px;
+  height: 22px;
+  margin-right: 13px;
 }
 
 .container-start-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .container-start-list__title {
@@ -88,6 +143,16 @@
 }
 
 .container-start-list__no-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--grey-1);
+  border-radius: 4px;
+  height: 87.35px;
+  max-width: 562px;
+  padding: 20px 15px;
+  justify-content: center;
+  gap: 11px;
 }
 
 .container-start-list__big-rectangle {
