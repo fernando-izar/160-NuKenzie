@@ -16,7 +16,9 @@ function InitialPage({ setInitialPage, changePage }) {
             Centralize o controle das suas finanças
           </h1>
           <p className="land__paragraph">de forma rápida e segura</p>
-          <button onClick={changePage}>Iniciar</button>
+          <button className="land__button-start" onClick={changePage}>
+            Iniciar
+          </button>
         </div>
         <div className="art">
           <div className="circle-external">
