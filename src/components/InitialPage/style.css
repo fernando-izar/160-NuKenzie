@@ -91,7 +91,7 @@
 }
 
 .green-rectangle {
-  width: 291.79px;
+  width: 231.79px;
   height: 69px;
   left: 45.27px;
   top: 202.89px;
@@ -99,6 +99,39 @@
   box-shadow: 0px 2.67961px 26.7961px rgba(0, 0, 0, 0.25);
   border-radius: 2.67961px;
   position: absolute;
+  display: flex;
+}
+
+.green-rectangle__div-left {
+  padding: 13px 8px 13px 10px;
+  position: relative;
+}
+
+.green-rectangle__green-square {
+  width: 44.88px;
+  height: 42.87px;
+  background: #66c085;
+  border-radius: 2.67961px;
+}
+
+.green-rectangle__svg1 {
+  position: absolute;
+  bottom: 20px;
+  left: 22px;
+}
+
+.green-rectangle__svg2 {
+  position: absolute;
+  bottom: 30px;
+  left: 22px;
+}
+
+.green-rectangle__div-rigth {
+  padding: 13px 15px 25px 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 7.37px;
 }
 
 .pink-rectangle {
@@ -110,4 +143,33 @@
   background: #ffffff;
   box-shadow: 0px 3.62137px 36.2137px rgba(0, 0, 0, 0.25);
   border-radius: 3.62137px;
+  display: flex;
+}
+
+.pink-rectangle__div-left {
+  padding: 18px 12px 17px 14px;
+  position: relative;
+}
+.pink-rectangle__pink-square {
+  width: 60.66px;
+  height: 57.94px;
+  background: #fd377e;
+  border-radius: 3.62137px;
+}
+.pink-rectangle__svg1 {
+  position: absolute;
+  bottom: 35px;
+  left: 34px;
+}
+.pink-rectangle__svg2 {
+  position: absolute;
+  bottom: 44px;
+  left: 34px;
+}
+.pink-rectangle__div-rigth {
+  padding: 18.11px 20.82px 34.4px 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 9.96px;
 }
