@@ -1,11 +1,12 @@
 import Form from "./components/Form";
 import List from "./components/List";
-import logo from "./img/Nu_Kenzie.png";
+import logo from "./assets/img/Nu_Kenzie.png";
 import InitialPage from "./components/InitialPage";
 import TotalMoney from "./components/TotalMoney";
 
 import { useState } from "react";
 
+import "./reset.css";
 import "./App.css";
 
 function App() {
@@ -23,20 +24,28 @@ function App() {
   ) : (
     <div className="App">
       <header className="header">
-        <figure>
-          <img src={logo} alt="" />
+        <figure className="header__figure">
+          <img className="header__img" src={logo} alt="logo" />
         </figure>
-        <button onClick={changePage}>Inicio</button>
+        <button
+          className="button-header button-header--start"
+          onClick={changePage}
+        >
+          Inicio
+        </button>
       </header>
       <main className="main">
-        <div>
+        <div className="container-left-side">
           <section className="section-form">
             <Form
               listTransactions={listTransactions}
               setListTransactions={setListTransactions}
             />
           </section>
-          <section className="section-total-money">
+          <section
+            className="section-total-money"
+            style={{ display: listTransactions.length ? "flex" : "none" }}
+          >
             <TotalMoney listTransactions={listTransactions} />
           </section>
         </div>
