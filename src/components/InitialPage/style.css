@@ -5,6 +5,15 @@
   background: var(--grey-4);
 }
 
+@media (max-width: 376px) {
+  .all-landpage {
+    transform: scale(0.6);
+    position: absolute;
+    left: -119px;
+    top: -216px;
+  }
+}
+
 .land {
   background: var(--grey-4);
   display: flex;
@@ -127,6 +136,7 @@
   top: 94px;
   background: url("../../assets/img/ellipseExternal.png");
   z-index: 1;
+  /* transform: scale(0.6); */
 }
 
 .circle-median {
