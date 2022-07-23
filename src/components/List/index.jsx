@@ -4,7 +4,6 @@ import "./style.css";
 
 function List({ listTransactions, setListTransactions }) {
   const [view, setView] = useState("todos");
-
   const removeItem = (indexSelected) =>
     setListTransactions(
       listTransactions.filter((element, index) => index !== indexSelected)
@@ -18,18 +17,39 @@ function List({ listTransactions, setListTransactions }) {
           <button
             className="button button--all"
             onClick={() => setView("todos")}
+            style={{
+              background:
+                view === "todos" ? "var(--color-primary)" : "var(--grey-2)",
+              color: view === "todos" ? "#ffffff" : "#343A40",
+              borderColor:
+                view === "todos" ? "var(--color-primary)" : "var(--grey-2)",
+            }}
           >
             Todos
           </button>
           <button
             className="button button--in"
             onClick={() => setView("entrada")}
+            style={{
+              background:
+                view === "entrada" ? "var(--color-primary)" : "var(--grey-2)",
+              color: view === "entrada" ? "#ffffff" : "#343A40",
+              borderColor:
+                view === "entrada" ? "var(--color-primary)" : "var(--grey-2)",
+            }}
           >
             Entradas
           </button>
           <button
             className="button button--out"
             onClick={() => setView("despesa")}
+            style={{
+              background:
+                view === "despesa" ? "var(--color-primary)" : "var(--grey-2)",
+              color: view === "despesa" ? "#ffffff" : "#343A40",
+              borderColor:
+                view === "despesa" ? "var(--color-primary)" : "var(--grey-2)",
+            }}
           >
             Despesas
           </button>
@@ -51,6 +71,12 @@ function List({ listTransactions, setListTransactions }) {
                       : "none",
                 }}
               >
+                <div
+                  className="card__green-bar"
+                  style={{
+                    display: element.type === "entrada" ? "flex" : "none",
+                  }}
+                ></div>
                 <div className="card__div-texts">
                   <h3 className="card__description">{element.description}</h3>
                   <p className="card__type">{element.type}</p>
