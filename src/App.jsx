@@ -24,15 +24,14 @@ function App() {
   ) : (
     <div className="App">
       <header className="header">
-        <figure className="header__figure">
-          <img className="header__img" src={logo} alt="logo" />
-        </figure>
-        <button
-          className="button-header button-header--start"
-          onClick={changePage}
-        >
-          Inicio
-        </button>
+        <div className="header__div">
+          <figure className="header__figure">
+            <img className="header__img" src={logo} alt="logo" />
+          </figure>
+          <button className="button-header" onClick={changePage}>
+            Inicio
+          </button>
+        </div>
       </header>
       <main className="main">
         <div className="container-left-side">

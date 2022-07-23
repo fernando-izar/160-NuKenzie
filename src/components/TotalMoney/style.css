@@ -13,6 +13,15 @@
   gap: 6px;
 }
 
+@media (max-width: 1000px) {
+  .total-money {
+    margin-top: 0px;
+    padding: 5px 10px 0px 10px;
+    height: fit-content;
+    gap: 0px;
+  }
+}
+
 .total-money__totals {
   display: flex;
   align-items: center;
@@ -30,6 +39,12 @@
   color: var(--grey-4);
 }
 
+@media (max-width: 1000px) {
+  .total-money__text {
+    font-size: 13px;
+  }
+}
+
 .total-money__value {
   height: 30px;
   font-family: "Nunito";
@@ -40,6 +55,12 @@
   color: var(--color-primary);
 }
 
+@media (max-width: 1000px) {
+  .total-money__value {
+    font-size: 13px;
+  }
+}
+
 .total-money__explanation {
   display: flex;
   font-family: "Nunito";
@@ -48,4 +69,10 @@
   font-size: 12px;
   line-height: 22px;
   color: #343a40;
+}
+
+@media (max-width: 1000px) {
+  .total-money__explanation {
+    font-size: 10px;
+  }
 }

@@ -6,6 +6,12 @@
   gap: 19px;
 }
 
+@media (max-width: 1000px) {
+  .form {
+    gap: 5px;
+  }
+}
+
 .form__div-header {
   display: flex;
   flex-direction: column;
@@ -22,6 +28,12 @@
   margin-bottom: 12.1px;
 }
 
+@media (max-width: 1000px) {
+  .form_description-title {
+    margin-bottom: 5px;
+  }
+}
+
 .form__description-input {
   display: flex;
   flex-direction: row;
@@ -33,6 +45,10 @@
   border-radius: 8px;
   width: 314px;
   height: 52.8px;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 .form__description-example {
@@ -115,12 +131,6 @@ input[type="number"] {
   font-size: 12px;
   line-height: 26px;
   color: #343a40;
-}
-
-.form__option-in {
-}
-
-.form__option-out {
 }
 
 .button {

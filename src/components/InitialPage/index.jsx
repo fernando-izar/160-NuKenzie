@@ -6,7 +6,7 @@ import blackDot from "../../assets/img/dotBlack.png";
 
 function InitialPage({ setInitialPage, changePage }) {
   return (
-    <>
+    <div className="all-landpage">
       <div className="land">
         <div className="welcome">
           <figure className="welcome__fig">
@@ -282,7 +282,7 @@ function InitialPage({ setInitialPage, changePage }) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
